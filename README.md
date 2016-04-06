@@ -8,7 +8,7 @@
 
 ## Purpose
 Your digital life - whether on facebook, twitter or email - is littered 
-with events, dates and times. CREW aims to collate those into one social 
+with events, dates and times. <b><i>crew</i></b> aims to collate those into one social 
 feed and reduce the clutter
 
 ## Features
@@ -81,7 +81,7 @@ FRIENDS, ME (each displaying corresponding events)
 	* SETTINGS view will have various ways to change privacy, location 
 	settings and event category preferences
 
-&#42; potential privacy issues arise
+&#42; potential privacy issues arise <p>
 &#42;&#42; tentative ideas: groups, guest accounts
 
 ## Implementation
