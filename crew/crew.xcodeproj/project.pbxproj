@@ -16,6 +16,9 @@
 		4A4370B81CCA8C1400F42A13 /* crewUITests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4A4370B71CCA8C1400F42A13 /* crewUITests.swift */; };
 		4A4370C91CCA8CB100F42A13 /* EventListTableViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4A4370C81CCA8CB100F42A13 /* EventListTableViewController.swift */; };
 		4A4370CE1CCC2E9B00F42A13 /* SWRevealViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 4A4370CD1CCC2E9B00F42A13 /* SWRevealViewController.m */; };
+		4A4FA9E01CD1864A00E7222D /* CrewEventsView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4A4FA9DF1CD1864A00E7222D /* CrewEventsView.swift */; };
+		4A4FA9E21CD18A9F00E7222D /* MyEventsView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4A4FA9E11CD18A9F00E7222D /* MyEventsView.swift */; };
+		4A4FA9E41CD18ABE00E7222D /* NearbyEventsView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4A4FA9E31CD18ABE00E7222D /* NearbyEventsView.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -53,6 +56,9 @@
 		4A4370CB1CCC2E9B00F42A13 /* crew-Bridging-Header.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = "crew-Bridging-Header.h"; sourceTree = "<group>"; };
 		4A4370CC1CCC2E9B00F42A13 /* SWRevealViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = SWRevealViewController.h; sourceTree = "<group>"; };
 		4A4370CD1CCC2E9B00F42A13 /* SWRevealViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = SWRevealViewController.m; sourceTree = "<group>"; };
+		4A4FA9DF1CD1864A00E7222D /* CrewEventsView.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; name = CrewEventsView.swift; path = crew/CrewEventsView.swift; sourceTree = "<group>"; };
+		4A4FA9E11CD18A9F00E7222D /* MyEventsView.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; name = MyEventsView.swift; path = crew/MyEventsView.swift; sourceTree = "<group>"; };
+		4A4FA9E31CD18ABE00E7222D /* NearbyEventsView.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; name = NearbyEventsView.swift; path = crew/NearbyEventsView.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -144,6 +150,9 @@
 		4A4370C61CCA8C2900F42A13 /* View */ = {
 			isa = PBXGroup;
 			children = (
+				4A4FA9DF1CD1864A00E7222D /* CrewEventsView.swift */,
+				4A4FA9E11CD18A9F00E7222D /* MyEventsView.swift */,
+				4A4FA9E31CD18ABE00E7222D /* NearbyEventsView.swift */,
 			);
 			name = View;
 			path = ..;
@@ -301,7 +310,10 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				4A4FA9E01CD1864A00E7222D /* CrewEventsView.swift in Sources */,
+				4A4FA9E21CD18A9F00E7222D /* MyEventsView.swift in Sources */,
 				4A4370C91CCA8CB100F42A13 /* EventListTableViewController.swift in Sources */,
+				4A4FA9E41CD18ABE00E7222D /* NearbyEventsView.swift in Sources */,
 				4A43709A1CCA8C1400F42A13 /* ViewController.swift in Sources */,
 				4A4370981CCA8C1400F42A13 /* AppDelegate.swift in Sources */,
 				4A4370CE1CCC2E9B00F42A13 /* SWRevealViewController.m in Sources */,
@@ -536,6 +548,7 @@
 				4A4370BE1CCA8C1400F42A13 /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
 		};
 		4A4370BF1CCA8C1400F42A13 /* Build configuration list for PBXNativeTarget "crewTests" */ = {
 			isa = XCConfigurationList;
@@ -544,6 +557,7 @@
 				4A4370C11CCA8C1400F42A13 /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
 		};
 		4A4370C21CCA8C1400F42A13 /* Build configuration list for PBXNativeTarget "crewUITests" */ = {
 			isa = XCConfigurationList;
@@ -552,6 +566,7 @@
 				4A4370C41CCA8C1400F42A13 /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
 		};
 /* End XCConfigurationList section */
 	};
