@@ -11,6 +11,7 @@ import UIKit
 class NearbyEventsView: UIViewController {
 
     @IBOutlet weak var Menu: UIBarButtonItem!
+    @IBOutlet weak var SearchEventsButton: UIBarButtonItem!
     @IBOutlet weak var NavigationBar: UINavigationBar!
     @IBOutlet weak var TableView: UITableView!
     
@@ -23,6 +24,8 @@ class NearbyEventsView: UIViewController {
         
         NavigationBar.barStyle = UIBarStyle.Black
         NavigationBar.tintColor = UIColor.whiteColor()
+        
+        self.view.backgroundColor = UIColor.grayColor()
     }
     
 }

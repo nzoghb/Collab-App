@@ -11,6 +11,7 @@ import UIKit
 class CrewEventsView: UIViewController {
 
     @IBOutlet weak var Menu: UIBarButtonItem!
+    @IBOutlet weak var SearchEventsButton: UIBarButtonItem!
     @IBOutlet weak var NavigationBar: UINavigationBar!
     @IBOutlet weak var TableView: UITableView!
     
@@ -23,11 +24,14 @@ class CrewEventsView: UIViewController {
         
         NavigationBar.barStyle = UIBarStyle.Black
         NavigationBar.tintColor = UIColor.whiteColor()
+        
+        self.view.backgroundColor = UIColor.grayColor()
+        
     }
     
 //    override func didReceiveMemoryWarning() {
 //        super.didReceiveMemoryWarning()
 //        // Dispose of any resources that can be recreated.
-//    
+//
     
 }

@@ -11,6 +11,7 @@ import UIKit
 class MyEventsView: UIViewController {
 
     @IBOutlet weak var Menu: UIBarButtonItem!
+    @IBOutlet weak var CreateNewEventButton: UIBarButtonItem!
     @IBOutlet weak var NavigationBar: UINavigationBar!
     @IBOutlet weak var TableView: UITableView!
 
@@ -23,6 +24,8 @@ class MyEventsView: UIViewController {
         
         NavigationBar.barStyle = UIBarStyle.Black
         NavigationBar.tintColor = UIColor.whiteColor()
+        
+        self.view.backgroundColor = UIColor.grayColor()
     }
     
 }
