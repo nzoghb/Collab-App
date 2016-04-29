@@ -23,8 +23,11 @@ class CrewEventsView: UIViewController {
         
         NavigationBar.barStyle = UIBarStyle.Black
         NavigationBar.tintColor = UIColor.whiteColor()
-        
-
     }
+    
+//    override func didReceiveMemoryWarning() {
+//        super.didReceiveMemoryWarning()
+//        // Dispose of any resources that can be recreated.
+//    
     
 }
