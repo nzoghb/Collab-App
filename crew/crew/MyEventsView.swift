@@ -14,6 +14,8 @@ class MyEventsView: UIViewController {
     @IBOutlet weak var CreateNewEventButton: UIBarButtonItem!
     @IBOutlet weak var NavigationBar: UINavigationBar!
     @IBOutlet weak var TableView: UITableView!
+    
+    let greyBlue = UIColor(red: 70/255, green: 140/255, blue: 200/255, alpha: 1.0)
 
     override func viewDidLoad() {
         super.viewDidLoad()
@@ -25,7 +27,7 @@ class MyEventsView: UIViewController {
         NavigationBar.barStyle = UIBarStyle.Black
         NavigationBar.tintColor = UIColor.whiteColor()
         
-        self.view.backgroundColor = UIColor.grayColor()
+        self.view.backgroundColor = greyBlue
     }
     
 }
