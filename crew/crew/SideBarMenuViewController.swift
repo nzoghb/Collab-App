@@ -8,16 +8,17 @@
 
 import UIKit
 
-class SideBarMenuView: UITableViewController {
-
+class SideBarMenuViewController: UITableViewController {
+    
 //    @IBOutlet var profilePicture: UIImageView!
     
     let greyBlue = UIColor(red: 70/255, green: 140/255, blue: 200/255, alpha: 1.0)
+    var chosenCellIndex = 0
     
     override func viewDidLoad() {
         super.viewDidLoad()
-        // Do any additional setup after loading the view, typically from a nib.
-//        profilePicture.image = UIImage(named: "Headshot")
+    // Do any additional setup after loading the view, typically from a nib.
+    //        profilePicture.image = UIImage(named: "Headshot")
         
         self.view.backgroundColor = greyBlue
     }
@@ -44,5 +45,22 @@ class SideBarMenuView: UITableViewController {
     }
     
 //    Added profile pic and username to sidebar menu. Need to start on views for other things from menu
+    
+//    override func tableView(tableView: UITableView, didSelectRowAtIndexPath indexPath: NSIndexPath) {
+//        
+//        chosenCellIndex = indexPath.row
+//        self.performSegueWithIdentifier("profile_segue", sender: self)
+//        
+//    }
+    
+//    // This function is called before the segue
+//    override func prepareForSegue(segue: UIStoryboardSegue, sender: AnyObject?) {
+//        
+//        // get a reference to the second view controller
+//        let secondViewController = segue.destinationViewController as! SecondViewController
+//        
+//        // set a variable in the second view controller with the data to pass
+//        secondViewController.receivedCellIndex = chosenCellIndex
+//    }
     
 }
