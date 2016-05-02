@@ -19,8 +19,10 @@ class EventItem: NSObject {
     /* The event's associated date and time. */
     var date : String!
     /* The event's header picture, to advertise it. */
-    let image = UIImage(named:"event" + String(arc4random_uniform(6)) + ".jpg")!
+    
+    let image = UIImage(named:"event" + String(arc4random_uniform(5) + 1) + ".jpg")!
     //    bgImage = UIImageView(image: image)
+    
     /* The event's privacy setting. */
     var visibility: String!
     
