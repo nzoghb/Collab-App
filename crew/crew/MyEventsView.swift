@@ -2,13 +2,13 @@
 //  MyEventsView.swift
 //  crew
 //
-//  Created by Maaz Uddin on 4/27/16.
+//  Created by Maaz Uddin and Nicolas Zoghb on 4/27/16.
 //  Copyright © 2016 iOS Decal. All rights reserved.
 //
 
 import UIKit
 
-class MyEventsView: UIViewController, UITableViewDataSource {
+class MyEventsView: UIViewController, UITableViewDataSource, UITableViewDelegate {
 
     @IBOutlet weak var Menu: UIBarButtonItem!
     @IBOutlet weak var CreateNewEventButton: UIBarButtonItem!
@@ -23,6 +23,7 @@ class MyEventsView: UIViewController, UITableViewDataSource {
         super.viewDidLoad()
         // Do any additional setup after loading the view, typically from a nib.
         
+        tableView.delegate = self
         tableView.dataSource = self
         
         Menu.target = self.revealViewController()
@@ -63,13 +64,7 @@ class MyEventsView: UIViewController, UITableViewDataSource {
     //        }
     //    }
     
-    /* On click, segue to event. */
-    //    override func tableView(tableView: UITableView, didSelectRowAtIndexPath indexPath: NSIndexPath) {
-    //        tableView.deselectRowAtIndexPath(indexPath, animated: true)
-    //
-    //        let row = indexPath.row
-    //        print(events[row])
-    //    }
+   
     
     
     //    override func prepareForSegue(segue: UIStoryboardSegue, sender: AnyObject?) {}
@@ -77,6 +72,7 @@ class MyEventsView: UIViewController, UITableViewDataSource {
     func tableView(tableView: UITableView, cellForRowAtIndexPath indexPath: NSIndexPath) -> UITableViewCell {
         print("hi")
         let cell = tableView.dequeueReusableCellWithIdentifier("cell", forIndexPath: indexPath) as! EventItemCell
+//        let cell: EventItemCell = tableView.cellForRowAtIndexPath(indexPath)!
         let row = indexPath.row
         if events.count != 0 {
             let event: EventItem = events[row]
@@ -89,9 +85,30 @@ class MyEventsView: UIViewController, UITableViewDataSource {
         }
         
         return cell
-        
-        
     }
+    
+    override func prepareForSegue(segue: UIStoryboardSegue, sender: AnyObject!) {
+        if let cell = sender as? UITableViewCell {
+            let i = tableView.indexPathForCell(cell)!.row
+            if segue.identifier == "toRestaurant" {
+                let vc = segue.destinationViewController as! EventItemViewController
+                vc.event = events[i]
+            }
+        }
+    }
+    
+    var i = 0
+    
+    /* On click, segue to event. */
+    func tableView(tableView: UITableView, didSelectRowAtIndexPath indexPath: NSIndexPath) {
+        tableView.deselectRowAtIndexPath(indexPath, animated: true)
+        
+        i = indexPath.row
+    }
+    
+    
+    
+    
     
     func tableView(tableView: UITableView, numberOfRowsInSection section: Int) -> Int {
         return 1

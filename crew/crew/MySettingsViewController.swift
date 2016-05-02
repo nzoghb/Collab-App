@@ -2,7 +2,7 @@
 //  MySettingsViewController.swift
 //  crew
 //
-//  Created by Maaz Uddin on 5/1/16.
+//  Created by Maaz Uddin and Nicolas Zoghb on 5/1/16.
 //  Copyright © 2016 iOS Decal. All rights reserved.
 //
 

@@ -2,7 +2,7 @@
 //  SideBarMenuView.swift
 //  crew
 //
-//  Created by Maaz Uddin on 4/28/16.
+//  Created by Maaz Uddin and Nicolas Zoghb on 4/28/16.
 //  Copyright © 2016 iOS Decal. All rights reserved.
 //
 

@@ -2,7 +2,7 @@
 //  EventItemCell.swift
 //  crew
 //
-//  Created by Nicolas Zoghb on 5/1/16.
+//  Created by Nicolas Zoghb and Maaz Uddin on 5/1/16.
 //  Copyright © 2016 iOS Decal. All rights reserved.
 //
 

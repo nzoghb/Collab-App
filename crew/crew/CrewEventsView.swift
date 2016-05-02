@@ -2,7 +2,7 @@
 //  CrewView.swift
 //  crew
 //
-//  Created by Maaz Uddin on 4/27/16.
+//  Created by Maaz Uddin and Nicolas Zoghb on 4/27/16.
 //  Copyright © 2016 iOS Decal. All rights reserved.
 //
 
